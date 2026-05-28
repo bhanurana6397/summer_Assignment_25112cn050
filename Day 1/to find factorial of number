@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int n, i, fa=1;
+    printf("Enter a number to calculate its factorial: ");
+    scanf("%d", &n);
+    
+    if (n < 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+        return 1;
+    }
+    for (i = 1; i <=n; i++) {
+     fa=fa*i;
+    }
+
+    printf("Factorial: %d\n", fa);
+    return 0;
+}
+    
